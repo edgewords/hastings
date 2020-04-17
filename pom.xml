@@ -59,7 +59,7 @@
     		<version>2.21.0</version>
 			<configuration>
 				<includes>
-					<include>MyRunner.java</include>
+					<include>Runner.java</include>
 				</includes>
 			</configuration>			
   		</plugin>

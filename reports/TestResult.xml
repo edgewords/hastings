@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.107055">
+<testcase classname="Feature 1" name="Scenario 1" time="0.106925">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at step_bindings.Test_1_steps.i_get_a_message_in_the_results(Test_1_steps.java:21)&#13;&#10;&#9;at ✽.Then I get a message in the results(Test 1-1001.feature:7)&#13;&#10;"><![CDATA[When I run this scenario....................................................passed
+Then I get a message in the results.........................................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at step_bindings.Test_1_steps.i_get_a_message_in_the_results(Test_1_steps.java:21)
+	at ✽.Then I get a message in the results(Test 1-1001.feature:7)
+]]></failure>
+</testcase>
+<testcase classname="Feature 2" name="Scenario 2" time="0.00013">
+<system-out><![CDATA[When I run this test........................................................passed
+Then it passes..............................................................passed
+]]></system-out>
+</testcase>
+</testsuite>
