@@ -3,13 +3,16 @@ package runners;
 import org.junit.runner.RunWith;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+//import cucumber.api.junit.Cucumber;
+import com.hpe.alm.octane.OctaneCucumber;
 
-@RunWith (Cucumber.class)
+@RunWith (OctaneCucumber.class)
 @CucumberOptions(
-		plugin = {"html:reports/cucumber-html-report",
+		plugin = {"pretty",
+				"junit:reports/TestResult.xml",
+				"html:reports/cucumber-html-report",
 				"json:reports/cucumber.json",
-				"pretty", "junit:reports/TestResult.xml"},
+				},
 		//tags = {"@functional"},
 		features = {"src/test/java/features"},
 		glue = {"step_bindings"}
